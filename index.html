@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Fauna/Flora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="pluma.ico" type="image/png">
+</head>
+<body>
+    <h1>Gestión de Fauna/Flora</h1>
+    <div class="container">
+        <form id="faunaForm">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br>
+            <label for="nombre_cientifico">Nombre Científico:</label>
+            <input type="text" id="nombre_cientifico" name="nombre_cientifico" required><br>
+            <label for="habitat">Hábitat:</label>
+            <input type="text" id="habitat" name="habitat" required><br>
+            <label for="estado_conservacion">Estado de Conservación:</label>
+            <input type="text" id="estado_conservacion" name="estado_conservacion" required><br>
+            <label for="region_geografica">Región Geográfica:</label>
+            <input type="text" id="region_geografica" name="region_geografica" required><br>
+            <button type="submit" id="submitBtn">Agregar</button>
+        </form>
+
+        <h2>Lista de Fauna/Flora</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre Científico</th>
+                    <th>Hábitat</th>
+                    <th>Estado de Conservación</th>
+                    <th>Región Geográfica</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="faunaTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
